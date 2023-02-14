@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+    }
+    .player {
+      position: absolute;
+      width: 350px;
+      background: #f1f3f4;
+      border-radius: 20px;
+      box-shadow: 0 50px 80px rgba(0,0,0,0.5);
+    }
+    .player .imgbox {
+      position: relative;
+      width: 100%;
+      height: 450px;
+    }
+    .player .imgbox img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .player audio {
+      width: 100%;
+      outline: none;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+
+    a:hover {
+      background-color: rgba(128, 128, 128, 0.608);
+      color: black;
+    }
+
+    .previous {
+      background-color: black;
+      color: white;
+    }
+
+    .next {
+      background-color: black;
+      color: white;
+    }
+
+    .round {
+      border-radius: 0%;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>MYAudio</title>
+</head>
+<body>
+  <div class="player">
+    <div class="imgbox">
+      <img src="https://i.pinimg.com/564x/f8/04/5c/f8045cd90bd3700f81cecdc77de30ecc.jpg">
+    </div>
+    <audio src="https://pagalworldi.com/files/download/id/14055" controls></audio>
+    <center>
+      <a href="#" class="previous round">&#8249;</a>
+      <a href="#" class="next round">&#8250;</a></center>
+    <br><br>
+  </div>
+
+</body>
+</html>
